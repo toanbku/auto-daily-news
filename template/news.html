@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Daily Short News</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    .container-fluid {
+      width: 680px;
+      height: 680px;
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+    .main-img {
+      min-width: 680px;
+      min-height: 408px;
+    }
+    .logo {
+      position: absolute; 
+      width: 100px; 
+      top: -15px; 
+      right: 70px;
+    }
+    .title {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <img class="logo" src="https://i.imgur.com/gKJn3Jr.png" >
+    <img src="{{ imgUrl }}" onerror="this.src='https://i.imgur.com/1mkFvRl.jpg';" class="img-fluid main-img" alt="Responsive image">
+    <h4 class="title">{{ title }}</h4>
+    <p>
+      {{ contentSnippet }}
+    </p>
+    </div>
+  </div>
+</body>
+</html>
